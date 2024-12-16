@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.project-1 {
+  background: #2ecc71;
+  color: #fff;
+}
