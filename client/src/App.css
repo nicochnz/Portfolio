@@ -1,13 +1,13 @@
+* {
+  --couleur-titre: #012030;
+  --couleur-texte: #f1f1f1;
+}
 body,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
-}
-.project-2 {
-  background: #2e40cc;
-  color: #fff;
 }
 
 .contact {
