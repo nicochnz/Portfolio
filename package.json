@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@fullpage/react-fullpage": "^0.1.46",
+    "animejs": "^3.2.2",
     "fullpage.js": "^4.0.31"
   }
 }
