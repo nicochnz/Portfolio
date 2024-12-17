@@ -16,7 +16,7 @@
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  background: #f06060;
+  background: #df8e8e;
   width: 100%;
 }
 
@@ -76,8 +76,10 @@
     font-size: 1.5rem;
     margin: 1rem 1rem;
   }
-
   .project-2 .description {
     font-size: 1.5rem;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: left;
   }
 }

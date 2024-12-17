@@ -1,6 +1,7 @@
 * {
   --couleur-titre: #012030;
   --couleur-texte: #f1f1f1;
+  font-family: "Crimson Text", serif;
 }
 body,
 html {

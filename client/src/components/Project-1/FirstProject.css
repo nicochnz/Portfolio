@@ -120,5 +120,8 @@
 
   .project-1 .description {
     font-size: 1.5rem;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: left;
   }
 }
