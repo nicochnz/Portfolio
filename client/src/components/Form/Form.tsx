@@ -1,27 +1,15 @@
-import { useState } from "react";
+import { ValidationError, useForm } from "@formspree/react";
 import "./Form.css";
 
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [state, handleSubmit] = useForm("xgvegeyb");
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
-  ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert("Form Submitted!");
-  };
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
 
   return (
-    <div className="section form-container">
+    <div id="form" className="section form-container">
       <form onSubmit={handleSubmit} className="form">
         <h2>Contact me</h2>
 
@@ -31,8 +19,6 @@ export default function ContactForm() {
             type="text"
             id="name"
             name="name"
-            value={formData.name}
-            onChange={handleChange}
             placeholder="Your name here"
             required
           />
@@ -44,11 +30,10 @@ export default function ContactForm() {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
             placeholder="youremail@example.com"
             required
           />
+          <ValidationError prefix="Email" field="email" errors={state.errors} />
         </div>
 
         <div className="form-field">
@@ -56,17 +41,36 @@ export default function ContactForm() {
           <textarea
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             placeholder="Type your message here"
             required
           />
+          <ValidationError
+            prefix="Message"
+            field="message"
+            errors={state.errors}
+          />
         </div>
 
-        <button type="submit" className="submit-button">
+        <button
+          type="submit"
+          className="submit-button"
+          disabled={state.submitting}
+        >
           Send Message
         </button>
       </form>
+
+      <a target="_blank" href="https://github.com/nicochnz" rel="noreferrer">
+        <img className="icons" src="/images/github.png" alt="Github" />
+      </a>
+
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/nicolas-chiche-79903b2b0"
+        rel="noreferrer"
+      >
+        <img className="icons" src="/images/linkedin.png" alt="LinkedIn" />
+      </a>
     </div>
   );
 }

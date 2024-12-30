@@ -80,6 +80,9 @@
   text-align: left;
   text-decoration: none;
 }
+.description h3 {
+  color: var(--couleur-titre);
+}
 
 @media (min-width: 992px) {
   .section {

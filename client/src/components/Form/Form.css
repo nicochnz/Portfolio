@@ -88,6 +88,16 @@ textarea {
   background-color: var(--couleur-titre);
   transform: translateY(2px);
 }
+.icons {
+  margin: 0 auto;
+  padding: 2rem;
+  height: 5rem;
+  width: 5rem;
+  transition: 0.4s;
+}
+.icons:hover {
+  opacity: 70%;
+}
 
 @media (max-width: 1200px) {
   .form {

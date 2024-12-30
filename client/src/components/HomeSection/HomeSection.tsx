@@ -3,6 +3,7 @@ export default function HomeSection() {
   return (
     <div className="section home">
       <h1>Chiche Nicolas</h1>
+      <img className="ProfilPicture" src="images/Nico.png" alt="PhotoProfil" />
       <p className="presentation">Hi, I'm a french developer.</p>
       <p>
         <span>HTML</span>
@@ -15,7 +16,7 @@ export default function HomeSection() {
         <span>NodeJs</span>
       </p>
       <p className="informations">
-        For more information, please contact me <a href="s">here</a>.
+        You can contact me <a href="#form">here</a>.
       </p>
     </div>
   );

@@ -7,13 +7,17 @@ export default function FirstProject() {
       <img src="images/Projet1(2).png" alt="img2" />
       <p>First project</p>
       <p className="description">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
-        consequatur soluta exercitationem ab magnam id magni, eveniet dicta
-        vitae autem aliquam sapiente ut, porro nesciunt doloremque consequuntur
-        nisi fuga blanditiis.
+        <h3>Project Description :</h3>
+        Development of an interactive quiz about Bordeaux with two difficulty
+        levels (easy and hard). This two-week project was built using HTML, CSS,
+        and JavaScript.
+        <h3>Skills Developed:</h3>
+        This project allowed me to strengthen my JavaScript fundamentals,
+        improve code organization, efficiently manipulate the DOM, and enhance
+        my project management skills within a set timeframe.
       </p>
       <a rel="noreferrer" target="_blank" href="https://bdxquizz.netlify.app/">
-        Click-me
+        Discover-it
       </a>
       <p>
         <span>HTML</span>

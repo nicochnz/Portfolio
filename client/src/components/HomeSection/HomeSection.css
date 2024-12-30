@@ -11,7 +11,10 @@
   background: #d7a184;
   color: var(--couleur-texte);
 }
-
+.ProfilPicture {
+  height: auto;
+  width: 20rem;
+}
 h1 {
   font-size: 3rem;
   color: #012030;
@@ -36,16 +39,17 @@ span {
   box-sizing: border-box;
 }
 .informations {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .informations a {
   text-decoration: none;
-  color: var(--couleur-texte);
+  color: var(--couleur-titre);
   transition: 0.6s;
 }
 .informations a:hover {
-  color: var(--couleur-titre);
+  color: skyblue;
 }
+
 @media (min-width: 992px) {
   .section {
     flex-wrap: nowrap;
@@ -57,7 +61,7 @@ span {
   }
 
   .presentation {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   span {
@@ -66,10 +70,10 @@ span {
   }
 
   .informations {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .informations a {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
